@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
         <div id="form">
             <form>
                 <img id="hinhgg" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"/>
-                <h2 style="margin-left: 135px; margin-top: auto;margin-bottom: 10px;">Sign in</h2>
-                <p style=" margin-left: 90px;">Use your Google Account</p>
+                <h2>Sign in</h2>
+                <p class="use">Use your Google Account</p>
                 <input id="email" type="text" placeholder="Email or phone"/>
-                <br/>
                 <a style="margin-left: 20px;" href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&dsh=S873214401%3A1665544550079356&flowEntry=AddSession&flowName=GlifWebSignIn&hl=en">Forgot Email?</a>
                 <br/>
                 <h5 style="margin-top: 30px;margin-bottom: auto; margin-left: 20px;">Not your computer? Use Guest mode to sign in privately.</h5>
@@ -22,8 +22,11 @@
                 <br/>
                 <br/>
                 <br/>
-                <a style="margin-left: 20px;" href="#">Creat account</a>
-                <button id="next">NEXT</button>
+                <div class="parent">
+                    <button class="account">Creat account</button>
+                    <button id="next">NEXT</button>
+                </div>
+                
             </form>
         </div>
     </div>
@@ -49,18 +52,6 @@
             border-radius: 10px;
             margin: auto;
             margin-top: 200px;
-        }
-        #next{
-            color: white;
-            background-color: #1d87e5;
-            margin-left: 160px;
-            position: absolute;
-        }
-        #email{
-            width: 300px;
-            height: 30px;
-            margin-left: 20px;
-            margin-bottom: 5px;
         }
     </style>
 </body>
